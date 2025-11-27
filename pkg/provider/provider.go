@@ -76,7 +76,7 @@ type Config struct {
 	Model       string `json:"model,omitempty"`
 	MaxRetries  int    `json:"max_retries,omitempty"`
 	Timeout     int    `json:"timeout,omitempty"`
-	HTTPHeaders map[string]string
+	HTTPHeaders map[string]string `json:"http_headers,omitempty"`
 }
 
 // ProviderType represents the type of LLM provider.
